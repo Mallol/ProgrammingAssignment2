@@ -1,4 +1,5 @@
 ## Funcao para criacao de matriz com cache
+## This matrix work with CacheSolve. makeCacheMatrix save the matrix on the cache by "<<-"
 
 makeCacheMatrix <- function(matriz_origem = matrix()) {
         
@@ -10,6 +11,7 @@ makeCacheMatrix <- function(matriz_origem = matrix()) {
         }
         
 ## Funcao para setar e obter matriz invertida
+## This function is to set and get inverted matrix
         get <- function() matriz_origem
 
         set_inverse <- function(solve) inv_matriz <<- solve
@@ -20,6 +22,8 @@ makeCacheMatrix <- function(matriz_origem = matrix()) {
 
 
 ## testa se o inverso da matriz foi armazenada, se sim imprime matriz caheada
+## test if inversed matrix had storaged in the cache or not. In positive case print the message "Matriz Cacheada"
+## in negative case print "Matriz nao estava no cache"
 
 cacheSolve <- function(matriz_no_cache, ...) {
         inv_matriz <- matriz_no_cache$get_inverse()
