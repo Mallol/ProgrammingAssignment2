@@ -54,4 +54,3 @@ esta_no_cache <- makeCacheMatrix(matriz_de_teste)
 retorno <- cacheSolve(esta_no_cache)
 retorno <- cacheSolve(esta_no_cache)
 
-
